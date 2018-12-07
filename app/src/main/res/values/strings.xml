@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TongueDiagnosis</string>
+    <string name="login">"  LOGIN  "</string>
+    <string name="account_new">新しいアカウント</string>
+    <string name="warning_text">IDとパスワードを入力してください</string>
+    <string name="passward_hint">パスワード</string>
+    <string name="id_hint">ID</string>
+    <string name="warning_text_new">新しいIDとパスワードを入力してください</string>
+    <string name="id_hint_new">新しいID</string>
+    <string name="passward_hint_new">新しいパスワード</string>
+    <string name="account_create">新規作成</string>
+    <string name="title_activity_screen_size">ScreenSizeActivity</string>
+    <string name="AYAMARI">誤り解析</string>
+    <string name="Ayamari">誤り解析</string>
+</resources>

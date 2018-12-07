@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReConfusionActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <android.support.constraint.ConstraintLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+
+                <TextView
+
+                    android:id="@+id/ca_title"
+
+                    android:layout_width="546dp"
+
+                    android:layout_height="65dp"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="11dp"
+
+                    android:text="採点結果(テスト問題R1)"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="50sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_cal"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="8dp"
+
+                    android:layout_marginBottom="8dp"
+
+                    android:text="正\n解"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_title" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_brank"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_cal"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+                <Button
+
+                    android:id="@+id/ca_kouzetsu_r"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="紅舌"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_brank"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+                <Button
+
+                    android:id="@+id/ca_tankou_r"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="淡紅"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_kouzetsu_r"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+                <Button
+
+                    android:id="@+id/ca_tanpaku_r"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="淡白"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_tankou_r"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+                <Button
+
+                    android:id="@+id/ca_shihanzetsu_r"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="紫斑舌"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_tanpaku_r"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+                <Button
+
+                    android:id="@+id/ca_ans"
+
+                    android:layout_width="180dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginLeft="16dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="正解率"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_shihanzetsu_r"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+                <Button
+
+                    android:id="@+id/ca_kouzetsu_"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="紅舌"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_cal"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_brank" />
+
+
+                <Button
+
+                    android:id="@+id/ca_tankou_c"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="淡紅"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_cal"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_kouzetsu_" />
+
+
+                <Button
+
+                    android:id="@+id/ca_tanpaku_c"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="淡白"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_cal"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_tankou_c" />
+
+
+                <Button
+
+                    android:id="@+id/ca_shihanzetsu_c"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:background="@drawable/text_button"
+
+                    android:text="紫斑舌"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_cal"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_tanpaku_c" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_a1"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_color1"
+
+                    android:gravity="center"
+
+                    android:text="A1"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_kouzetsu_"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_kouzetsu_r" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_a2"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="A2"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_a1"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_tankou_r" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_a3"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="A3"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_a2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_tanpaku_r" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_a4"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="A4"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_a3"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_shihanzetsu_r" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_b1"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="B1"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_tankou_c"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_a1" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_b2"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_color1"
+
+                    android:gravity="center"
+
+                    android:text="B2"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_b1"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_a2" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_b3"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="B3"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_b2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_a3" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_b4"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="B4"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_b3"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_a4" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_c1"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="C1"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_tanpaku_c"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_b1" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_c2"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="C2"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_c1"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_b2" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_c3"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_color1"
+
+                    android:gravity="center"
+
+                    android:text="C3"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_c2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_b3" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_c4"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="C4"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_c3"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_b4" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_d1"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="D1"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_shihanzetsu_c"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_c1" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_d2"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="D2"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_d1"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_c2" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_d3"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="D3"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_d2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_c3" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_d4"
+
+                    android:layout_width="110dp"
+
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/text_color1"
+
+                    android:gravity="center"
+
+                    android:text="D4"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_d3"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_c4" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_ansa"
+
+                    android:layout_width="180dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginLeft="16dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="正解率"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_a4"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_ans" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_ansb"
+
+                    android:layout_width="180dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginLeft="16dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="正解率"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_b4"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_ansa" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_ansc"
+
+                    android:layout_width="180dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginLeft="16dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="正解率"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_c4"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_ansb" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_ansd"
+
+                    android:layout_width="180dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginLeft="16dp"
+
+                    android:background="@drawable/text_border"
+
+                    android:gravity="center"
+
+                    android:text="正解率"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="36sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_d4"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_ansc" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_score2"
+
+                    android:layout_width="180dp"
+
+                    android:layout_height="61dp"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="80dp"
+
+                    android:gravity="right"
+
+                    android:text="獲得点数"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textSize="40sp"
+                    app:layout_constraintStart_toStartOf="@+id/ca_score"
+                    app:layout_constraintTop_toBottomOf="@+id/ca_score" />
+
+
+                <TextView
+
+                    android:id="@+id/ca_score"
+
+                    android:layout_width="283dp"
+
+                    android:layout_height="59dp"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="8dp"
+
+                    android:layout_marginEnd="8dp"
+
+                    android:layout_marginRight="8dp"
+
+                    android:text="あなたの得点は"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="40sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_ans"
+
+                    app:layout_constraintTop_toTopOf="@+id/ca_ansa" />
+
+
+                <Button
+
+                    android:id="@+id/button13"
+
+                    android:layout_width="210dp"
+
+                    android:layout_height="110dp"
+
+                    android:layout_marginStart="32dp"
+
+                    android:layout_marginLeft="32dp"
+
+                    android:layout_marginTop="8dp"
+
+                    android:layout_marginEnd="56dp"
+
+                    android:layout_marginRight="56dp"
+
+                    android:layout_marginBottom="8dp"
+
+                    android:onClick="onButtonTapped"
+
+                    android:text="誤り解析へ"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_ansc"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_score2" />
+
+
+                <TextView
+
+                    android:id="@+id/textView3"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="80dp"
+
+                    android:text="点です"
+
+                    android:textAppearance="@android:style/TextAppearance.Large"
+
+                    android:textSize="40sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_score2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_score" />
+
+
+                <TextView
+
+                    android:id="@+id/textView5"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginEnd="8dp"
+
+                    android:layout_marginRight="8dp"
+
+                    android:text="読影結果"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+                    android:textSize="24sp"
+
+                    app:layout_constraintEnd_toEndOf="@+id/ca_ans"
+
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_title" />
+
+
+                <TextView
+
+                    android:id="@+id/textView6"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="59dp"
+
+                    android:layout_marginStart="110dp"
+
+                    android:layout_marginLeft="110dp"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="100点満点中"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+                    android:textSize="40sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toEndOf="@+id/ca_ansa"
+
+                    app:layout_constraintTop_toBottomOf="@+id/ca_score" />
+
+
+                <TextView
+
+                    android:id="@+id/textView8"
+
+                    android:layout_width="7dp"
+
+                    android:layout_height="550dp"
+
+                    android:background="@android:color/darker_gray"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="@+id/ca_b4"
+
+                    app:layout_constraintStart_toStartOf="@+id/ca_ansb"
+
+                    app:layout_constraintTop_toTopOf="@+id/ca_shihanzetsu_r" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
